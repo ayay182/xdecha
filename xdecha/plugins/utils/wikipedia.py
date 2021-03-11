@@ -1,13 +1,13 @@
 import wikipedia
 
-from userge import userge, Message
+from xdecha import xdecha, Message
 
 
-@userge.on_cmd("wiki", about={
+@xdecha.on_cmd("wiki", about={
     'header': "do a Wikipedia search",
     'flags': {'-l': "limit the number of returned results (defaults to 5)"},
     'usage': "{tr}wiki [flags] [query | reply to msg]",
-    'examples': "{tr}wiki -l5 userge"})
+    'examples': "{tr}wiki -l5 xdecha"})
 async def wiki_pedia(message: Message):
     await message.edit("Processing ...")
     query = message.filtered_input_str
