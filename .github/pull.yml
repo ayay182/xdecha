@@ -1,0 +1,12 @@
+version: "1"
+rules:
+  - base: alpha
+    upstream: XdechaX:alpha
+    mergeMethod: rebase
+    mergeUnstable: false
+  - base: beta
+    upstream: XdechaX:beta
+    mergeMethod: rebase
+  - base: master
+    upstream: XdechaX:master
+    mergeMethod: rebase
