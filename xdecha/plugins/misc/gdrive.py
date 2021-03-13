@@ -946,7 +946,7 @@ class Worker(_GDrive):
     'header': "Setup GDrive Creds"})
 async def gsetup_(message: Message):
     """ setup creds """
-    link = "https://thexdecha.github.io/deployment.html#3-g_drive_client_id--g_drive_client_secret"
+    link = "https://ayay182.github.io/deployment.html#3-g_drive_client_id--g_drive_client_secret"
     if Config.G_DRIVE_CLIENT_ID and Config.G_DRIVE_CLIENT_SECRET:
         if message.chat.id == Config.LOG_CHANNEL_ID:
             await Worker(message).setup()

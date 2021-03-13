@@ -87,7 +87,7 @@ if xdecha.has_bot:
             else:
                 user_dict = await xdecha.bot.get_user_dict(Config.OWNER_ID[0])
                 await c_q.answer(
-                    f"Only {user_dict['flname']} Can Access this...! Build Your Own @Thexdecha 🤘",
+                    f"Only {user_dict['flname']} Can Access this...! 🤘",
                     show_alert=True)
         return wrapper
 
@@ -121,7 +121,7 @@ if xdecha.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = "🖥 **xdecha Main Menu** 🖥"
+            text = "🖥 **Main Menu** 🖥"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -169,7 +169,7 @@ if xdecha.has_bot:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            "🖥 **xdecha Main Menu** 🖥", reply_markup=InlineKeyboardMarkup(main_menu_buttons()))
+            "🖥 **Main Menu** 🖥", reply_markup=InlineKeyboardMarkup(main_menu_buttons()))
 
     @xdecha.bot.on_callback_query(filters=filters.regex(pattern=r"^chgclnt$"))
     @check_owner
@@ -369,7 +369,7 @@ if xdecha.has_bot:
                     id=uuid4(),
                     title="Main Menu",
                     input_message_content=InputTextMessageContent(
-                        "🖥 **xdecha Main Menu** 🖥"
+                        "🖥 **Main Menu** 🖥"
                     ),
                     url="https://github.com/ayay182/xdecha",
                     description="xdecha Main Menu",
