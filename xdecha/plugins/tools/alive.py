@@ -19,7 +19,7 @@ _LOG = logging.getLogger(__name__)
 _IS_TELEGRAPH = False
 _IS_STICKER = False
 
-_DEFAULT = "https://t.me/thexdecha/31"
+_DEFAULT = "https://t.me/ayay182/31"
 _CHAT, _MSG_ID = None, None
 _LOGO_ID = None
 
